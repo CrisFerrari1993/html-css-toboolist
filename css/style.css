@@ -1,11 +1,53 @@
 /* Stile principale della pagina */
 :root {
-    font-family: 'Righteous', sans-serif;
-        font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
+    background-color: rgb(236, 236, 236);
+}
+
+/* Stile logo */
+.logo_block {
+    line-height: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px 5px;
+    text-align: start;
+}
+#logo_text {
+    font-size: xx-large;
+    font-weight: bolder;
+    vertical-align: 15px;
+}
+
+/* Main style */
+.main_container {
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    margin:5% 10% 5%;
+}
+.section_top{
+    border-bottom: 2px solid rgb(216, 216, 216);
+    padding: 4% 4% 4% 15%;
+}
+.task1{
+    background-color: rgb(59, 186, 224);
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 10px;
+    color: white;
+}
+.task2{
+    font-weight: bold;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 10px;
+    color: rgb(216, 216, 216);
 }
