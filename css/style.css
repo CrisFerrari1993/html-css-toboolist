@@ -1,148 +1,106 @@
-/* Stile principale della pagina */
-
-:root{
+/* Main page rule */
+:root {
     font-family: 'Roboto', sans-serif;
 }
 body {
+    background-color:rgb(240, 240, 240) ;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: rgb(236, 236, 236);
+    box-sizing: content-box;
 }
 
-/* Stile logo */
+/* logo & img rules */
+.head_page {
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+}
+.logo_title, img {
+    display: inline;
+    line-height: 20px;
+    vertical-align: middle;
+    padding-top: 1%;
+    padding-bottom: 1% ;
+    padding-left: 1%;
+}
 
-.logo_block {
-    line-height: 10px;
-    background-color: rgb(255, 255, 255);
-    padding: 5px 10px 5px;
-    text-align: start;
-}
-#logo_text {
-    font-size: xx-large;
-    font-weight: bolder;
-    vertical-align: 15px;
+/* buttons rule */
+.btn {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid;
+    font-size: small;
+    font-weight: bold;
+    padding: 5px;
 }
 
-/* Main style */
-
-p {
-   margin-top: 5px; 
+button[name="section"] {
+    color:lightgray;
 }
-h4 {
-    margin-bottom: 10px;
+button[name="task"] {
+    background-color: rgb(56, 172, 250);
+    color: white;
+    border: 0px;
 }
-.main_container {
+/* main container rules */
+.main_container{
+    box-sizing: content-box;
     background-color: white;
     border-radius: 10px;
+    margin: 5% 10% 5%;
     width: 80%;
-    max-height: fit-content;
-    margin:5% 10% 5%;
 }
-.section_top{
-    border-bottom: 2px solid rgb(216, 216, 216);
-    padding-left: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+.top{
+    border-bottom: 2px solid rgb(240, 240, 240) ;
+    padding: 2% 2% 2% 5%;
 }
-.section_main{
-    padding-left: 5%;
-    padding-bottom: 2%;
+.down{
+    padding: 2% ;
 }
-.task_title {
-    font-size: larger;
-    margin-bottom: 10px;
+ul{
+    list-style: none;
 }
-.task1{
-    background-color: rgb(59, 186, 224);
-    font-weight: bold;
-    border-radius: 5px;
-    padding: 5px;
-    font-size: 10px;
-    color: white;
+li{
+    margin-top: 15px;
 }
-.task2{
-    font-weight: bold;
-    border: 1px solid rgb(216, 216, 216);
-    border-radius: 5px;
-    padding: 5px;
-    font-size: 10px;
-    color: rgb(216, 216, 216);
-}
-.task_name {
-    font-weight: 400;
-    line-height: 15px;
-}
-/* icons setting */
-
-#markupv::after {
-    font-size: 10px;
-    content: "\2713" ;
-    color: rgb(0, 126, 0) ;
+.markx:before{
+    content:"\2717" ;
+    color: rgb(255, 36, 36);
     border-radius: 100%;
-    border: solid 1px rgb(0, 126, 0);
-    padding: 2px;
+    border: 1px solid rgb(255, 36, 36);
+    padding: 5px;
 }
-#markupx::after {
-    font-size: 10px;
-    content: "\2717";
-    color: rgb(196, 5, 5);
+.markv::before{
+    content: "\2713";
+    color: rgb(25, 156, 25);
     border-radius: 100%;
-    border: solid 1px red;
-    padding: 2px;
-}
-#caret::after {
-    font-size: 10px;
-    content: "\25BC";
-    color: rgb(0, 0, 0);
-}
-/* labels color settings */
-
-.green {
-    background-color: rgb(0, 160, 0);
-    color: white;
-    border-radius: 8px;
+    border: 1px solid green;
     padding: 5px;
-    font-size: 10px;
-    margin-left: 10px;
 }
-.purple {
-    background-color: rgb(131, 78, 161);
-    color: white;
+/* labels settings */
+.label{
     border-radius: 8px;
-    padding: 5px;
-    font-size: 10px;
-    margin-left: 10px;
-}
-.orange {
-    background-color: rgb(202, 138, 20);
+    background-color: grey;
+    font-size: xx-small;
+    font-weight: bold;
     color: white;
-    border-radius: 8px;
-    padding: 5px;
-    font-size: 10px;
-    margin-left: 10px;
+    padding: 6px;
 }
-.hoingreen {
-    background-color: rgba(187, 255, 0, 0.815);
-        color: white;
-        border-radius: 8px;
-        padding: 5px;
-        font-size: 10px;
-        margin-left: 10px;
+span[name="azure"] {
+    background-color: rgb(56, 172, 250);
 }
-.pink {
-    background-color: rgb(197, 40, 145);
-    color: white;
-    border-radius: 8px;
-    padding: 5px;
-    font-size: 10px;
-    margin-left: 10px;
+span[name="purple"] {
+    background-color: rgb(124, 50, 194);
 }
-.azure {
-    background-color: rgb(59, 186, 224);
-    color: white;
-    border-radius: 8px;
-    padding: 5px;
-    font-size: 10px;
-    margin-left: 10px;
+span[name="green"]{
+    background-color: rgb(52, 197, 100)
+}
+span[name="orange"]{
+    background-color: rgb(224, 121, 61);
+}
+span[name="pink"]{
+    background-color: rgb(221, 96, 200);
+}
+span[name="gold"]{
+    background-color: rgb(103, 167, 0);
 }

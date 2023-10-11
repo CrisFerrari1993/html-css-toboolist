@@ -8,49 +8,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Toboolist</title>
 </head>
 <body>
-    <!-- Head logo e intestazione pagina -->
-    <heaer>
-        <div class="logo_block">
-            <img src="img/Logo.png" alt="Logo Boolean">
-            <span id="logo_text">Toboolist</span>
-        </div>  
+    <!-- Main logo & img  -->
+    <header class="head_page">
+        <img src="img/Logo.png" alt="Boolean Logo">
+        <h1 class="logo_title">Toboolist</h1>
     </header>
-    <!-- fin -->
-
-    <!-- Main e contenuto principale -->
+    <!-- Main page body -->
     <main>
-    <!-- sezione pulsanti -->
+        <!-- Tasks container -->
         <div class="main_container">
-            <section class="section_top">
-                <span class="task1">Add Task</span>
-                <span class="task2">Add Section</span>
+            <section class="top">
+                <button class="btn" name="task">Add Task</button>
+                <button class="btn" name="section">Add Section</button>
             </section>
-    <!-- sezione lista tasks -->
-            <section class="section_main">
-                <!-- sezione new tasks -->
-                <div class="tasks">
-                    <h4><span id="caret"></span>  New Task</h4>
-                    <p><span id="markupv"></span> Quarterly Newsletter<span class="azure">Editorial</span> </p>
-                </div>
-                <!-- sezione today -->
-                <div class="tasks">
-                    <h4><span id="caret"></span> Today</h4>
-                    <p><span id="markupv"></span> Recruiting blog post<span class="azure">Editorial</span> </p>
-                    <p><span id="markupv"></span> Mobile app launch</span><span class="purple">Q1 Goals</span> </p>
-                    <p><span id="markupx"></span> Interview John H.<span class="green">Recruiting</span> </p>
-                    <p><span id="markupv"></span> Summit update to mobile storefronts<span class="orange">Mobile</span> </p>
-                </div>
-                <!-- sezione upcoming -->
-                <div class="tasks">
-                    <h4><span id="caret"></span> Upcoming</h4>
-                    <p><span id="markupx"></span> Schedule meeting with Alex</p>
-                    <p><span id="markupv"></span> Homepage Refresh<span class="pink">Websites</span> </p>
-                    <p><span id="markupv"></span> Onboard new sales team members<span class="hoingreen">Sales</span> </p>
-                    <p><span id="markupv"></span> Review editorial calendar<span class="azure">Editorial</span> </p>
-                </div>
+            <section class="down">
+                <!-- unordered task lists -->
+                <ul>
+                    <h3><span class="material-symbols-outlined">expand_more</span> New Task </h3>
+                    <li><span class="markv"></span> Quarterly Newsletter <span class="label" name="azure"> Editorial </span></li>
+                </ul>
+                <ul>
+                    <h3><span class="material-symbols-outlined">expand_more</span> Today</h3>
+                    <li><span class="markv"></span> Recruiting blog post <span class="label" name="azure"> Editorial </span></li>
+                    <li><span class="markv"></span> Mobile app launch <span class="label" name="purple" >Q1 Goals </span></li>
+                    <li><span class="markx"></span> Interview John H. <span class="label" name="green">Recruiting</span></li>
+                    <li><span class="markv"></span> Summmit update to mobile storefronts <span class="label" name="orange"> Mobile </span></li>
+                </ul>
+                <ul>
+                    <h3><span class="material-symbols-outlined">expand_more</span> Upcoming</h3>
+                    <li><span class="markx"></span> Schedule meeting with Alex</li>
+                    <li><span class="markv"></span> Homepage refresh <span class="label" name="pink"> Website </span></li>
+                    <li><span class="markv"></span> Onboard new Sales team members <span class="label" name="gold"> Sales </span></li>
+                    <li><span class="markv"></span> Review aditorial calendar <span class="label" name="azure"> Editorial </span></li>
+                </ul>
             </section>
         </div>
     </main>
