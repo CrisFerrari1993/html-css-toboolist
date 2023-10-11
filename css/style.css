@@ -41,7 +41,9 @@ h4 {
 }
 .section_top{
     border-bottom: 2px solid rgb(216, 216, 216);
-    padding:2% 4%;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 .section_main{
     padding-left: 5%;
